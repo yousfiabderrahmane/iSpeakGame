@@ -1,1 +1,36 @@
-/* font-family: 'Poppins', sans-serif; */
+/*  */
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #2f3542 url("/img/bg.jpg") no-repeat left center/cover;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.play-again {
+  padding: 8px 15px;
+  border: none;
+  background: #f4f4f4;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.box {
+  border: 1px solid #dedede;
+  display: inline-block;
+  font-size: 30px;
+  margin: 20px;
+  padding: 10px;
+}
