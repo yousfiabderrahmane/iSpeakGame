@@ -3,7 +3,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+.error-container {
+  display: none;
+}
 body {
   height: 100vh;
   overflow: hidden;
@@ -51,15 +53,16 @@ img {
   padding: 10px;
 }
 
-@media (max-width: 500px) {
-  * {
-    margin: 0;
-  }
+@media (max-width: 1020px) {
   .container {
-    margin-top: 0;
-    gap: 20px;
+    display: none;
   }
-  .container h1 {
-    color: wheat;
+  .error-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    text-align: center;
+    padding: 10px;
   }
 }
