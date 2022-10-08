@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speak Number Guess</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="data:image/png;base64,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"
+      type="image/icon type"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <img src="/img/mic.png" alt="speak" />
+      <h1>Guess a number between 1-100</h1>
+      <h3>Speak The Number Into Your Microphone</h3>
+
+      <div id="msg" class="msg"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
