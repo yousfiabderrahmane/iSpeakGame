@@ -5,10 +5,12 @@
 }
 
 body {
-  background: #2f3542 url("/img/bg.jpg") no-repeat left center/cover;
-  background-position: center;
+  background: #2f3542;
   background-size: cover;
   color: white;
+}
+img {
+  height: 100px;
 }
 .container {
   display: flex;
@@ -26,6 +28,17 @@ body {
   background: #f4f4f4;
   border-radius: 5px;
   margin-top: 10px;
+  cursor: pointer;
+  opacity: 0;
+  animation: fade 1.5s ease-in forwards;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .box {
   border: 1px solid #dedede;
